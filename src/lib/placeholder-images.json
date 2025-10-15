@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A wide shot of diverse volunteers working together in a community garden.",
+      "imageUrl": "https://picsum.photos/seed/seva1/1920/1080",
+      "imageHint": "community volunteers"
+    },
+    {
+      "id": "student-support",
+      "description": "A smiling student receiving a scholarship certificate.",
+      "imageUrl": "https://picsum.photos/seed/seva2/600/400",
+      "imageHint": "student graduation"
+    },
+    {
+      "id": "disability-welfare",
+      "description": "A person in a wheelchair participating in a sports event.",
+      "imageUrl": "https://picsum.photos/seed/seva3/600/400",
+      "imageHint": "adaptive sports"
+    },
+    {
+      "id": "elderly-care",
+      "description": "A volunteer sharing a happy moment with an elderly person.",
+      "imageUrl": "https://picsum.photos/seed/seva4/600/400",
+      "imageHint": "elderly care"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Children learning in an outdoor classroom setting.",
+      "imageUrl": "https://picsum.photos/seed/seva5/600/400",
+      "imageHint": "children education"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Volunteers distributing food packages to the needy.",
+      "imageUrl": "https://picsum.photos/seed/seva6/600/400",
+      "imageHint": "food drive"
+    },
+    {
+      "id": "gallery-3",
+      "description": "A community health check-up camp in progress.",
+      "imageUrl": "https://picsum.photos/seed/seva7/600/400",
+      "imageHint": "medical camp"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Tree plantation drive with community members.",
+      "imageUrl": "https://picsum.photos/seed/seva8/600/400",
+      "imageHint": "tree plantation"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A group of women engaged in a skill development workshop.",
+      "imageUrl": "https://picsum.photos/seed/seva9/600/400",
+      "imageHint": "women empowerment"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Cleaning a local park as part of a cleanliness drive.",
+      "imageUrl": "https://picsum.photos/seed/seva10/600/400",
+      "imageHint": "community cleaning"
+    },
+    {
+      "id": "team-member-1",
+      "description": "Professional headshot of the foundation's founder.",
+      "imageUrl": "https://picsum.photos/seed/team1/200/200",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Professional headshot of the program director.",
+      "imageUrl": "https://picsum.photos/seed/team2/200/200",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Professional headshot of the community outreach coordinator.",
+      "imageUrl": "https://picsum.photos/seed/team3/200/200",
+      "imageHint": "corporate headshot"
+    },
+    {
+      "id": "team-member-4",
+      "description": "Professional headshot of a volunteer coordinator.",
+      "imageUrl": "https://picsum.photos/seed/team4/200/200",
+      "imageHint": "person smiling"
+    }
+  ]
 }
