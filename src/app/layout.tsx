@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SevaSetu",
+  title: "Sri Jagannath Welfare Friendship Foundation",
   description: "A foundation dedicated to community welfare and support.",
 };
 

@@ -24,7 +24,7 @@ export default function HeroSection() {
           Building Bridges of Hope
         </h1>
         <p className="mt-6 max-w-2xl text-lg md:text-xl">
-          SevaSetu is dedicated to empowering communities through education, healthcare, and support for the vulnerable.
+          Sri Jagannath Welfare Friendship Foundation is dedicated to empowering communities through education, healthcare, and support for the vulnerable.
         </p>
         <Button asChild size="lg" className="mt-8 rounded-full font-bold text-lg px-8 py-6">
           <Link href="#mission">Learn More</Link>

@@ -26,7 +26,7 @@ export default function MissionSection() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold font-headline md:text-4xl">Our Mission & Values</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            At SevaSetu, we are driven by a simple yet powerful mission: to create a supportive and inclusive society where everyone has the chance to thrive.
+            At Sri Jagannath Welfare Friendship Foundation, we are driven by a simple yet powerful mission: to create a supportive and inclusive society where everyone has the chance to thrive.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-3">

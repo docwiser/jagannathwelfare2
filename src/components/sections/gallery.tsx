@@ -4,15 +4,34 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const galleryImages = [
+const galleryImageIds = [
   'gallery-1', 'gallery-2', 'gallery-3', 'gallery-4', 'gallery-5', 'gallery-6'
-].map(id => PlaceHolderImages.find(img => img.id === id)).filter(Boolean);
+];
+const galleryImages = galleryImageIds.map(id => PlaceHolderImages.find(img => img.id === id)).filter(Boolean);
 
 type ImagePlaceholder = typeof galleryImages[0];
 
 export default function GallerySection() {
-  const [selectedImage, setSelectedImage] = useState<ImagePlaceholder>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((selectedImageIndex + 1) % galleryImages.length);
+    }
+  };
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((selectedImageIndex - 1 + galleryImages.length) % galleryImages.length);
+    }
+  };
+  
+  const selectedImage = selectedImageIndex !== null ? galleryImages[selectedImageIndex] : null;
 
   return (
     <section id="gallery" className="w-full py-16 md:py-24 bg-card">
@@ -31,7 +50,7 @@ export default function GallerySection() {
                 className={`group relative aspect-square cursor-pointer overflow-hidden rounded-lg shadow-lg ${
                   idx === 0 || idx === 5 ? 'col-span-2 row-span-2' : ''
                 }`}
-                onClick={() => setSelectedImage(image)}
+                onClick={() => setSelectedImageIndex(idx)}
               >
                 <Image
                   src={image.imageUrl}
@@ -49,8 +68,11 @@ export default function GallerySection() {
       </div>
       
       {selectedImage && (
-        <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-          <DialogContent className="max-w-4xl p-0 border-0 bg-transparent">
+        <Dialog open={selectedImageIndex !== null} onOpenChange={() => setSelectedImageIndex(null)}>
+          <DialogContent className="max-w-4xl p-0 border-0 bg-transparent flex items-center justify-center">
+             <Button variant="outline" size="icon" className="absolute left-2 top-1/2 -translate-y-1/2 z-10 rounded-full" onClick={handlePrev}>
+                <ChevronLeft />
+             </Button>
             <Image
               src={selectedImage.imageUrl}
               alt={selectedImage.description}
@@ -59,6 +81,9 @@ export default function GallerySection() {
               className="w-full h-auto rounded-lg object-contain"
               data-ai-hint={selectedImage.imageHint}
             />
+            <Button variant="outline" size="icon" className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rounded-full" onClick={handleNext}>
+                <ChevronRight />
+            </Button>
           </DialogContent>
         </Dialog>
       )}

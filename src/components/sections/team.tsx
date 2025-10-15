@@ -9,7 +9,7 @@ const teamMembers = [
     id: "team-member-1",
     name: "Priya Sharma",
     designation: "Founder & CEO",
-    bio: "With over 20 years of experience in social work, Priya founded SevaSetu to create a lasting impact on community welfare.",
+    bio: "With over 20 years of experience in social work, Priya founded Sri Jagannath Welfare Friendship Foundation to create a lasting impact on community welfare.",
     initials: "PS"
   },
   {

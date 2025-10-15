@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeartHandshake, Mail, MapPin, Phone, Twitter, Facebook, Instagram } from "lucide-react";
+import { HeartHandshake, Mail, MapPin, Phone, Twitter, Facebook, Instagram, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -11,15 +11,15 @@ export default function Footer() {
         <div className="space-y-6">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <HeartHandshake className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold font-headline">SevaSetu</span>
+            <span className="text-2xl font-bold font-headline">Sri Jagannath Welfare Friendship Foundation</span>
           </Link>
           <p className="max-w-md">
             Join us in our mission to build a bridge of support and compassion for those in need. Your contribution can make a world of difference.
           </p>
           <div className="flex space-x-4">
-            <Link href="#" className="text-muted-foreground hover:text-primary"><Twitter className="h-6 w-6" /></Link>
             <Link href="#" className="text-muted-foreground hover:text-primary"><Facebook className="h-6 w-6" /></Link>
-
+            <Link href="#" className="text-muted-foreground hover:text-primary"><Twitter className="h-6 w-6" /></Link>
+            <Link href="#" className="text-muted-foreground hover:text-primary"><Youtube className="h-6 w-6" /></Link>
             <Link href="#" className="text-muted-foreground hover:text-primary"><Instagram className="h-6 w-6" /></Link>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3">
               <Mail className="h-5 w-5 text-primary" />
-              <a href="mailto:contact@sevasetu.org" className="hover:text-primary">contact@sevasetu.org</a>
+              <a href="mailto:contact@jagannathwelfare.in" className="hover:text-primary">contact@jagannathwelfare.in</a>
             </div>
           </address>
         </div>
@@ -59,7 +59,7 @@ export default function Footer() {
       <div className="border-t bg-card">
         <div className="container mx-auto flex flex-col items-center justify-between gap-2 px-4 py-4 sm:flex-row md:px-6">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} SevaSetu Foundation. All rights reserved.
+            © {new Date().getFullYear()} Sri Jagannath Welfare Friendship Foundation. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm">
             <Link href="#" className="hover:text-primary">Privacy Policy</Link>
