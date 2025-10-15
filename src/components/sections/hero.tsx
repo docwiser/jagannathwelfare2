@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
         <h1 className="text-4xl font-extrabold tracking-tight font-headline md:text-6xl lg:text-7xl">
-          Building Bridges of Hope
+          Building Bridges of Service
         </h1>
         <p className="mt-6 max-w-2xl text-lg md:text-xl">
           Sri Jagannath Welfare Friendship Foundation is dedicated to empowering communities through education, healthcare, and support for the vulnerable.

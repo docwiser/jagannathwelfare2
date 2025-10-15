@@ -7,31 +7,38 @@ import { Linkedin, Twitter } from "lucide-react";
 const teamMembers = [
   {
     id: "team-member-1",
-    name: "Priya Sharma",
-    designation: "Founder & CEO",
-    bio: "With over 20 years of experience in social work, Priya founded Sri Jagannath Welfare Friendship Foundation to create a lasting impact on community welfare.",
-    initials: "PS"
+    name: "Chhabitra Bhoi",
+    designation: "Founder & President",
+    bio: "Visionary leader and the driving force behind the foundation, dedicated to serving the community.",
+    initials: "CB"
   },
   {
     id: "team-member-2",
-    name: "Rajesh Kumar",
-    designation: "Program Director",
-    bio: "Rajesh is an expert in sustainable development and manages the seamless execution of all our welfare programs.",
-    initials: "RK"
+    name: "Dhananjay Sethy",
+    designation: "Chief Secretary",
+    bio: "Manages the administrative functions, ensuring the smooth operation of all our welfare programs.",
+    initials: "DS"
   },
   {
     id: "team-member-3",
-    name: "Anjali Mehta",
-    designation: "Outreach Coordinator",
-    bio: "Anjali connects our foundation with the community, organizing events and managing our dedicated team of volunteers.",
-    initials: "AM"
+    name: "Akash Kandi",
+    designation: "Vice President",
+    bio: "A dynamic leader supporting the president's vision and helping to steer the foundation's initiatives.",
+    initials: "AK"
   },
   {
     id: "team-member-4",
-    name: "Vikram Singh",
-    designation: "Volunteer Lead",
-    bio: "A passionate advocate for change, Vikram inspires and leads our volunteers to give their best for the community.",
-    initials: "VS"
+    name: "Satyabrat Tihadi",
+    designation: "Vice President",
+    bio: "Passionate about community service, Satyabrat plays a key role in our outreach and program implementation.",
+    initials: "ST"
+  },
+  {
+    id: "team-member-5",
+    name: "Akash Behera",
+    designation: "Informer Journalist",
+    bio: "Our voice to the world, Akash helps in documenting and sharing the stories of impact from our foundation.",
+    initials: "AB"
   },
 ];
 
@@ -45,7 +52,7 @@ export default function TeamSection() {
             The dedicated individuals working tirelessly behind the scenes to turn our vision into reality.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {teamMembers.map((member) => {
             const image = PlaceHolderImages.find(img => img.id === member.id);
             return (

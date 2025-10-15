@@ -1,33 +1,33 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { GraduationCap, Accessibility, HeartHandshake, CheckCircle } from "lucide-react";
+import { Music, GraduationCap, Computer, CheckCircle } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "../ui/button";
 
 const programs = [
   {
-    id: "student-support",
+    id: "bajan-sandhya",
+    icon: <Music className="h-8 w-8" />,
+    title: "Sri Jagannath Bajan Sandhya",
+    description: "Our devotional band performs at various devotional events, spreading spirituality and culture through music.",
+    features: ["Live Bhajan Performances", "Cultural Event Organization", "Spiritual Music Workshops", "Community Gatherings"],
+    imageHint: "devotional music"
+  },
+  {
+    id: "coaching-center",
     icon: <GraduationCap className="h-8 w-8" />,
-    title: "Student Support Program",
-    description: "Fostering the next generation of leaders by providing scholarships, mentorship, and essential educational resources to deserving students.",
-    features: ["Scholarships for Higher Education", "Mentorship from Industry Experts", "Skill Development Workshops", "Access to Digital Learning Tools"],
-    imageHint: "student graduation"
+    title: "Coaching Center",
+    description: "Providing best-in-class higher secondary education with utmost affordability to empower the students of our community.",
+    features: ["Affordable Tuition", "Experienced Faculty", "Regular Mock Tests", "Career Counseling Sessions"],
+    imageHint: "students classroom"
   },
   {
-    id: "disability-welfare",
-    icon: <Accessibility className="h-8 w-8" />,
-    title: "Disability & Welfare",
-    description: "Ensuring individuals with disabilities live with dignity and have equal opportunities through assistive devices, therapy, and inclusive programs.",
-    features: ["Distribution of Mobility Aids", "Physical & Occupational Therapy", "Vocational Training Programs", "Community Sensitization Drives"],
-    imageHint: "adaptive sports"
-  },
-  {
-    id: "elderly-care",
-    icon: <HeartHandshake className="h-8 w-8" />,
-    title: "Elderly Welfare",
-    description: "Providing compassionate care and companionship to the elderly, ensuring their golden years are filled with comfort, health, and happiness.",
-    features: ["Senior Daycare Centers", "Mobile Healthcare Units", "Nutritional Support Programs", "Recreational & Social Activities"],
-    imageHint: "elderly care"
+    id: "csc-center",
+    icon: <Computer className="h-8 w-8" />,
+    title: "Common Service Center (CSC)",
+    description: "Assisting rural and semi-urban people with daily requirements, from government form fill-ups to digital documentation tasks.",
+    features: ["Govt. Scheme Assistance", "Digital Literacy Programs", "Online Form Submissions", "Documentation Services"],
+    imageHint: "computer center"
   },
 ];
 

@@ -33,11 +33,11 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3">
               <Phone className="h-5 w-5 text-primary" />
-              <a href="tel:+1234567890" className="hover:text-primary">+1 (234) 567-890</a>
+              <a href="tel:+919776358543" className="hover:text-primary">+91 97763 58543</a>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="h-5 w-5 text-primary" />
-              <a href="mailto:contact@jagannathwelfare.in" className="hover:text-primary">contact@jagannathwelfare.in</a>
+              <a href="mailto:chhabitrabhoi@gmail.com" className="hover:text-primary">chhabitrabhoi@gmail.com</a>
             </div>
           </address>
         </div>

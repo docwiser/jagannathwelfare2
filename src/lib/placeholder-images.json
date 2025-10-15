@@ -7,22 +7,22 @@
       "imageHint": "community volunteers"
     },
     {
-      "id": "student-support",
-      "description": "A smiling student receiving a scholarship certificate.",
+      "id": "bajan-sandhya",
+      "description": "A band performing devotional music on stage.",
       "imageUrl": "https://picsum.photos/seed/seva2/600/400",
-      "imageHint": "student graduation"
+      "imageHint": "devotional music"
     },
     {
-      "id": "disability-welfare",
-      "description": "A person in a wheelchair participating in a sports event.",
+      "id": "coaching-center",
+      "description": "Students listening attentively in a classroom.",
       "imageUrl": "https://picsum.photos/seed/seva3/600/400",
-      "imageHint": "adaptive sports"
+      "imageHint": "students classroom"
     },
     {
-      "id": "elderly-care",
-      "description": "A volunteer sharing a happy moment with an elderly person.",
+      "id": "csc-center",
+      "description": "A person helping another on a computer in a local center.",
       "imageUrl": "https://picsum.photos/seed/seva4/600/400",
-      "imageHint": "elderly care"
+      "imageHint": "computer center"
     },
     {
       "id": "gallery-1",
@@ -68,21 +68,27 @@
     },
     {
       "id": "team-member-2",
-      "description": "Professional headshot of the program director.",
+      "description": "Professional headshot of the chief secretary.",
       "imageUrl": "https://picsum.photos/seed/team2/200/200",
       "imageHint": "professional headshot"
     },
     {
       "id": "team-member-3",
-      "description": "Professional headshot of the community outreach coordinator.",
+      "description": "Professional headshot of the vice president.",
       "imageUrl": "https://picsum.photos/seed/team3/200/200",
       "imageHint": "corporate headshot"
     },
     {
       "id": "team-member-4",
-      "description": "Professional headshot of a volunteer coordinator.",
+      "description": "Professional headshot of a vice president.",
       "imageUrl": "https://picsum.photos/seed/team4/200/200",
       "imageHint": "person smiling"
+    },
+    {
+      "id": "team-member-5",
+      "description": "Professional headshot of a journalist.",
+      "imageUrl": "https://picsum.photos/seed/team5/200/200",
+      "imageHint": "person headshot"
     }
   ]
 }
