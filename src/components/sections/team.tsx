@@ -2,12 +2,12 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin, Twitter, ArrowRight } from "lucide-react";
 
 const teamMembers = [
   {
@@ -66,25 +66,27 @@ export default function TeamSection() {
             The dedicated individuals working tirelessly behind the scenes to turn our vision into reality.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((member) => {
             const image = PlaceHolderImages.find(img => img.id === member.id);
             return (
               <Card
                 key={member.name}
-                className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                className="shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
                 onClick={() => setSelectedMember(member)}
               >
-                <CardHeader className="items-center pt-8">
-                  <Avatar className="h-28 w-28 border-4 border-primary/50">
-                    {image && <AvatarImage src={image.imageUrl} alt={member.name} data-ai-hint={image.imageHint} />}
-                    <AvatarFallback className="text-3xl bg-muted">{member.initials}</AvatarFallback>
-                  </Avatar>
-                </CardHeader>
-                <CardContent className="pb-4">
-                  <h3 className="text-xl font-bold font-headline">{member.name}</h3>
-                  <p className="text-primary font-semibold">{member.designation}</p>
-                  <Button variant="link" className="mt-2">Read More</Button>
+                <CardContent className="p-4 flex items-center gap-4">
+                    <Avatar className="h-20 w-20 border-2 border-primary/50">
+                      {image && <AvatarImage src={image.imageUrl} alt={member.name} data-ai-hint={image.imageHint} />}
+                      <AvatarFallback className="text-2xl bg-muted">{member.initials}</AvatarFallback>
+                    </Avatar>
+                    <div className="flex-1 space-y-1">
+                      <h3 className="font-bold font-headline text-lg">{member.name}</h3>
+                      <p className="text-sm text-primary font-semibold">{member.designation}</p>
+                      <Button variant="link" size="sm" className="p-0 h-auto text-muted-foreground">
+                        Read More <ArrowRight className="ml-1 h-4 w-4" />
+                      </Button>
+                    </div>
                 </CardContent>
               </Card>
             );

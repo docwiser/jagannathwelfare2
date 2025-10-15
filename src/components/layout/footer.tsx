@@ -46,7 +46,7 @@ export default function Footer() {
           <h3 className="text-xl font-headline font-semibold">Make a Donation</h3>
           <form className="space-y-4">
             <div className="grid w-full items-center gap-1.5">
-              <Label htmlFor="amount">Amount (USD)</Label>
+              <Label htmlFor="amount">Amount (INR)</Label>
               <Input type="number" id="amount" placeholder="Enter amount" defaultValue="50" />
             </div>
             <Button type="submit" className="w-full rounded-full font-bold" size="lg">
