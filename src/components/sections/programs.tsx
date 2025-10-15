@@ -1,8 +1,12 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Music, GraduationCap, Computer, CheckCircle } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "../ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../ui/dialog";
 
 const programs = [
   {
@@ -31,7 +35,11 @@ const programs = [
   },
 ];
 
+type Program = typeof programs[0];
+
 export default function ProgramsSection() {
+  const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
+  
   return (
     <section id="programs" className="w-full py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
@@ -63,18 +71,18 @@ export default function ProgramsSection() {
                     {program.icon}
                     <CardTitle className="text-2xl font-headline">{program.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-base mb-6">
+                  <CardDescription className="text-base mb-6 line-clamp-2">
                     {program.description}
                   </CardDescription>
                   <ul className="space-y-3">
-                    {program.features.map((feature) => (
+                    {program.features.slice(0, 2).map((feature) => (
                       <li key={feature} className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-accent" />
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="mt-6 rounded-full font-semibold">
+                  <Button variant="outline" className="mt-6 rounded-full font-semibold" onClick={() => setSelectedProgram(program)}>
                     Learn More
                   </Button>
                 </div>
@@ -83,6 +91,40 @@ export default function ProgramsSection() {
           })}
         </div>
       </div>
+      
+       {selectedProgram && (
+        <Dialog open={!!selectedProgram} onOpenChange={(isOpen) => !isOpen && setSelectedProgram(null)}>
+          <DialogContent className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-0 p-0">
+             <div className="relative h-64 md:h-full w-full order-last md:order-first">
+                <Image
+                  src={PlaceHolderImages.find(img => img.id === selectedProgram.id)?.imageUrl || ''}
+                  alt={selectedProgram.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            <div className="p-6 md:p-8">
+              <DialogHeader>
+                <div className="flex items-center gap-4 mb-4 text-primary">
+                  {selectedProgram.icon}
+                  <DialogTitle className="text-2xl font-headline">{selectedProgram.title}</DialogTitle>
+                </div>
+              </DialogHeader>
+              <DialogDescription className="text-base mb-6">
+                {selectedProgram.description}
+              </DialogDescription>
+              <ul className="space-y-3">
+                {selectedProgram.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
     </section>
   );
 }

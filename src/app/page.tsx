@@ -6,6 +6,8 @@ import ProgramsSection from "@/components/sections/programs";
 import EventsSection from "@/components/sections/events";
 import GallerySection from "@/components/sections/gallery";
 import TeamSection from "@/components/sections/team";
+import AchievementsSection from "@/components/sections/achievements";
+import FeedbackSection from "@/components/sections/feedback";
 
 export default function Home() {
   return (
@@ -16,8 +18,10 @@ export default function Home() {
         <TeamSection />
         <ProgramsSection />
         <GallerySection />
+        <AchievementsSection />
         <MissionSection />
         <EventsSection />
+        <FeedbackSection />
       </main>
       <Footer />
     </div>

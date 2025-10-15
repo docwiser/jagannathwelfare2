@@ -1,28 +1,32 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CalendarDays, MapPin } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const upcomingEvents = [
   {
-    date: "July 25, 2024",
-    title: "Annual Health Check-up Camp",
+    date: "July 28, 2024",
+    title: "Blood Donation Camp",
     location: "Community Hall, Hope City",
-    description: "Join us for a free health screening event. Doctors and specialists will be available for consultations."
+    description: "Save a life. Join our annual blood donation drive and make a difference."
   },
   {
-    date: "August 10, 2024",
-    title: "Educational Scholarship Drive",
-    location: "City Library Auditorium",
-    description: "An event to award scholarships to bright students and kickstart our annual fundraising for the education program."
+    date: "August 15, 2024",
+    title: "Independence Day Celebration with Orphans",
+    location: "City Orphanage",
+    description: "Celebrate freedom by sharing joy and happiness with children at the local orphanage. Cultural programs and lunch."
   },
   {
-    date: "September 5, 2024",
-    title: "Senior Citizens Day Out",
-    location: "Tranquil Park",
-    description: "A day of fun, games, and companionship for the elderly members of our community."
+    date: "September 10, 2024",
+    title: "Free Computer Literacy Workshop",
+    location: "CSC Center, Rural Town",
+    description: "Empowering our community with essential digital skills. A free workshop for all ages."
   }
 ];
 
@@ -32,8 +36,12 @@ const pastEvents = [
   PlaceHolderImages.find(img => img.id === 'gallery-5'),
 ];
 
+type UpcomingEvent = typeof upcomingEvents[0];
+
 
 export default function EventsSection() {
+  const [selectedEvent, setSelectedEvent] = useState<UpcomingEvent | null>(null);
+
   return (
     <section id="events" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
@@ -59,13 +67,11 @@ export default function EventsSection() {
                     <CardTitle className="font-headline text-xl">{event.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
-                    <p className="text-muted-foreground">{event.description}</p>
-                    <div className="flex items-center gap-2 text-sm text-accent mt-4 font-semibold">
-                      <MapPin className="h-4 w-4" /> <span>{event.location}</span>
-                    </div>
+                    <p className="text-muted-foreground line-clamp-3">{event.description}</p>
                   </CardContent>
-                  <CardFooter>
-                    <Button variant="outline" className="w-full rounded-full">Volunteer</Button>
+                  <CardFooter className="flex-col items-stretch gap-2">
+                    <Button variant="outline" className="w-full rounded-full" onClick={() => setSelectedEvent(event)}>Read More</Button>
+                    <Button className="w-full rounded-full">Volunteer</Button>
                   </CardFooter>
                 </Card>
               ))}
@@ -97,6 +103,26 @@ export default function EventsSection() {
           </TabsContent>
         </Tabs>
       </div>
+      
+      {selectedEvent && (
+        <Dialog open={!!selectedEvent} onOpenChange={(isOpen) => !isOpen && setSelectedEvent(null)}>
+          <DialogContent className="max-w-lg">
+            <DialogHeader>
+              <div className="flex items-center gap-2 text-muted-foreground mb-2">
+                  <CalendarDays className="h-4 w-4" /> <span>{selectedEvent.date}</span>
+              </div>
+              <DialogTitle className="font-headline text-2xl">{selectedEvent.title}</DialogTitle>
+              <div className="flex items-center gap-2 text-sm text-accent pt-2 font-semibold">
+                <MapPin className="h-4 w-4" /> <span>{selectedEvent.location}</span>
+              </div>
+            </DialogHeader>
+            <div className="py-4">
+              <p className="text-muted-foreground">{selectedEvent.description}</p>
+            </div>
+            <Button className="w-full rounded-full">Volunteer</Button>
+          </DialogContent>
+        </Dialog>
+      )}
     </section>
   );
 }
