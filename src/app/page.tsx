@@ -10,20 +10,20 @@ import AchievementsSection from "@/components/sections/achievements";
 import FeedbackSection from "@/components/sections/feedback";
 
 export default function Home() {
-  return (
-    <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <Header />
-      <main className="flex-1">
-        <HeroSection />
-        <TeamSection />
-        <ProgramsSection />
-        <GallerySection />
-        <AchievementsSection />
-        <MissionSection />
-        <EventsSection />
-        <FeedbackSection />
-      </main>
-      <Footer />
-    </div>
-  );
+return (
+<div className="flex flex-col min-h-dvh bg-background text-foreground">
+<Header />
+<main className="flex-1">
+<HeroSection />
+<TeamSection />
+<ProgramsSection />
+<GallerySection />
+<AchievementsSection />
+<MissionSection />
+{0 > 1 && (<EventsSection />)}
+<FeedbackSection />
+</main>
+<Footer />
+</div>
+);
 }

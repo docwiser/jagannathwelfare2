@@ -1,94 +1,94 @@
 {
-  "placeholderImages": [
-    {
-      "id": "hero-background",
-      "description": "image of Shri Jagannath (source: Adobi Photostock)",
-      "imageUrl": "/jagannath.jpg",
-      "imageHint": "community volunteers"
-    },
-    {
-      "id": "bajan-sandhya",
-      "description": "A band performing devotional music on stage.",
-      "imageUrl": "https://picsum.photos/seed/seva2/600/400",
-      "imageHint": "devotional music"
-    },
-    {
-      "id": "coaching-center",
-      "description": "Students listening attentively in a classroom.",
-      "imageUrl": "https://picsum.photos/seed/seva3/600/400",
-      "imageHint": "students classroom"
-    },
-    {
-      "id": "csc-center",
-      "description": "A person helping another on a computer in a local center.",
-      "imageUrl": "https://picsum.photos/seed/seva4/600/400",
-      "imageHint": "computer center"
-    },
-    {
-      "id": "gallery-1",
-      "description": "Children learning in an outdoor classroom setting.",
-      "imageUrl": "https://picsum.photos/seed/seva5/600/400",
-      "imageHint": "children education"
-    },
-    {
-      "id": "gallery-2",
-      "description": "Volunteers distributing food packages to the needy.",
-      "imageUrl": "https://picsum.photos/seed/seva6/600/400",
-      "imageHint": "food drive"
-    },
-    {
-      "id": "gallery-3",
-      "description": "A community health check-up camp in progress.",
-      "imageUrl": "https://picsum.photos/seed/seva7/600/400",
-      "imageHint": "medical camp"
-    },
-    {
-      "id": "gallery-4",
-      "description": "Tree plantation drive with community members.",
-      "imageUrl": "https://picsum.photos/seed/seva8/600/400",
-      "imageHint": "tree plantation"
-    },
-    {
-      "id": "gallery-5",
-      "description": "A group of women engaged in a skill development workshop.",
-      "imageUrl": "https://picsum.photos/seed/seva9/600/400",
-      "imageHint": "women empowerment"
-    },
-    {
-      "id": "gallery-6",
-      "description": "Cleaning a local park as part of a cleanliness drive.",
-      "imageUrl": "https://picsum.photos/seed/seva10/600/400",
-      "imageHint": "community cleaning"
-    },
-    {
-      "id": "team-member-1",
-      "description": "Professional headshot of the foundation's founder.",
-      "imageUrl": "https://picsum.photos/seed/team1/200/200",
-      "imageHint": "professional portrait"
-    },
-    {
-      "id": "team-member-2",
-      "description": "Professional headshot of the chief secretary.",
-      "imageUrl": "https://picsum.photos/seed/team2/200/200",
-      "imageHint": "professional headshot"
-    },
-    {
-      "id": "team-member-3",
-      "description": "Professional headshot of the vice president.",
-      "imageUrl": "https://picsum.photos/seed/team3/200/200",
-      "imageHint": "corporate headshot"
-    },
-    {
-      "id": "team-member-4",
-      "description": "Professional headshot of a vice president.",
-      "imageUrl": "https://picsum.photos/seed/team4/200/200",
-      "imageHint": "person smiling"
-    },
-    {
-      "id": "team-member-5",
-      "description": "Professional headshot of a journalist.",
-      "imageUrl": "https://picsum.photos/seed/team5/200/200",
-      "imageHint": "person headshot"
-    }
-  ]
+"placeholderImages": [
+{
+"id": "hero-background",
+"description": "image of Shri Jagannath (source: Adobi Photostock)",
+"imageUrl": "/jagannath.jpg",
+"imageHint": "community volunteers"
+},
+{
+"id": "bajan-sandhya",
+"description": "Shri Jagannath Bhajan Sandhya",
+"imageUrl": "/jagannath.jpg",
+"imageHint": "devotional music"
+},
+{
+"id": "coaching-center",
+"description": "Students listening attentively in a classroom.",
+"imageUrl": "/coatching.png",
+"imageHint": "students classroom"
+},
+{
+"id": "csc-center",
+"description": "A person helping another on a computer in a local center.",
+"imageUrl": "/csc.png",
+"imageHint": "computer center"
+},
+{
+"id": "gallery-1",
+"description": "Children learning in an outdoor classroom setting.",
+"imageUrl": "https://picsum.photos/seed/seva5/600/400",
+"imageHint": "children education"
+},
+{
+"id": "gallery-2",
+"description": "Volunteers distributing food packages to the needy.",
+"imageUrl": "https://picsum.photos/seed/seva6/600/400",
+"imageHint": "food drive"
+},
+{
+"id": "gallery-3",
+"description": "A community health check-up camp in progress.",
+"imageUrl": "https://picsum.photos/seed/seva7/600/400",
+"imageHint": "medical camp"
+},
+{
+"id": "gallery-4",
+"description": "Tree plantation drive with community members.",
+"imageUrl": "https://picsum.photos/seed/seva8/600/400",
+"imageHint": "tree plantation"
+},
+{
+"id": "gallery-5",
+"description": "A group of women engaged in a skill development workshop.",
+"imageUrl": "https://picsum.photos/seed/seva9/600/400",
+"imageHint": "women empowerment"
+},
+{
+"id": "gallery-6",
+"description": "Cleaning a local park as part of a cleanliness drive.",
+"imageUrl": "https://picsum.photos/seed/seva10/600/400",
+"imageHint": "community cleaning"
+},
+{
+"id": "team-member-1",
+"description": "Professional headshot of the foundation's founder.",
+"imageUrl": "https://picsum.photos/seed/team1/200/200",
+"imageHint": "professional portrait"
+},
+{
+"id": "team-member-2",
+"description": "Professional headshot of the chief secretary.",
+"imageUrl": "https://picsum.photos/seed/team2/200/200",
+"imageHint": "professional headshot"
+},
+{
+"id": "team-member-3",
+"description": "Professional headshot of the vice president.",
+"imageUrl": "https://picsum.photos/seed/team3/200/200",
+"imageHint": "corporate headshot"
+},
+{
+"id": "team-member-4",
+"description": "Professional headshot of a vice president.",
+"imageUrl": "https://picsum.photos/seed/team4/200/200",
+"imageHint": "person smiling"
+},
+{
+"id": "team-member-5",
+"description": "Professional headshot of a journalist.",
+"imageUrl": "https://picsum.photos/seed/team5/200/200",
+"imageHint": "person headshot"
+}
+]
 }
