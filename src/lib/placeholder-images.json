@@ -2,8 +2,8 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A wide shot of diverse volunteers working together in a community garden.",
-      "imageUrl": "https://picsum.photos/seed/seva1/1920/1080",
+      "description": "image of Shri Jagannath (source: Adobi Photostock)",
+      "imageUrl": "/jagannath.jpg",
       "imageHint": "community volunteers"
     },
     {
